@@ -128,7 +128,7 @@ class BossJobDownloaderMiddleware(object):
 
 class ProxyMiddleware(object):
     def process_request(self, request, spider):
-        url = "http://api.ip.data5u.com/dynamic/get.html?order=0d171ac67a30b8ef3791b18d806f7c7f&sep=4%27"
+        url = ""
         proxy = 'http://' + requests.get(url=url).content.decode()
         print("**************ProxyMiddleware no pass************" + proxy)
         request.meta['proxy'] = proxy

@@ -22,7 +22,7 @@ class IncrementSpider(object):
         self.key = parse.quote('大数据')
         self.start_url = 'https://www.zhipin.com/c{}/?query={}&page={}'
         self.header_url = 'https://www.zhipin.com'
-        self.ip_url = "http://api.ip.data5u.com/dynamic/get.html?order=0d171ac67a30b8ef3791b18d806f7c7f&sep=4%27"
+        self.ip_url = ""
         self.client = pymongo.MongoClient(host=settings['MONGO_HOST'], port=settings['MONGO_PORT'])
         self.client.admin.authenticate(settings['MONGO_USER'], settings['MONGO_PSW'])
         self.BossJob = self.client[settings['MONGO_DB']]
