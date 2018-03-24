@@ -26,7 +26,7 @@ NEWSPIDER_MODULE = 'boss_job.spiders'
 MONGO_HOST = "localhost"
 MONGO_PORT = 27017
 MONGO_DB = "fwwb"
-MONGO_COLL = "LiePinData"
+MONGO_COLL = "boss_job_Data"
 MONGO_USER = ""
 MONGO_PSW = ""
 
